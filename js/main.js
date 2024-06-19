@@ -93,7 +93,7 @@ function generateFloor() {
     rectMesh.position.set(0, 0.5, -1); // Posición inicial del cubo
     rectMesh.castShadow = true;
     scene.add(rectMesh);
-
+/*
     // Configurar físicas para el cubo
     const physicsOptions = {
         shape: 'box', // Tipo de forma
@@ -102,7 +102,7 @@ function generateFloor() {
         angularDamping: 0.9, // Amortiguación angular
         friction: 0.5, // Fricción
         restitution: 0.6 // Restitución (rebote)
-    };
+    };*/
 
     // Añadir el cubo a las físicas
     ammoPhysics.addMesh(rectMesh, physicsOptions);
@@ -531,7 +531,7 @@ function init() {
     dirLight2.position.set( - 1, - 1, - 1 );
     scene.add( dirLight2 );
     // Aquí podrías inicializar cualquier cosa adicional antes de cargar el modelo
-    
+ 
 const physics = AmmoPhysics();
  ammoPhysics = physics;
     generateFloor();
